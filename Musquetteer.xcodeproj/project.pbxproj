@@ -15,6 +15,20 @@
 		EE032C37168F9E0C00E5E7BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C2B168F9E0C00E5E7BC /* main.m */; };
 		EE032C38168F9E0C00E5E7BC /* MRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C2D168F9E0C00E5E7BC /* MRAppDelegate.m */; };
 		EE032C39168F9E0C00E5E7BC /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C2F168F9E0C00E5E7BC /* MRViewController.m */; };
+		EE032C5E168FA0C400E5E7BC /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C43168FA0C400E5E7BC /* logging_mosq.c */; };
+		EE032C5F168FA0C400E5E7BC /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C45168FA0C400E5E7BC /* memory_mosq.c */; };
+		EE032C60168FA0C400E5E7BC /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C47168FA0C400E5E7BC /* messages_mosq.c */; };
+		EE032C61168FA0C400E5E7BC /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C49168FA0C400E5E7BC /* mosquitto.c */; };
+		EE032C62168FA0C400E5E7BC /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C4D168FA0C400E5E7BC /* net_mosq.c */; };
+		EE032C63168FA0C400E5E7BC /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C4F168FA0C400E5E7BC /* read_handle.c */; };
+		EE032C64168FA0C400E5E7BC /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C51168FA0C400E5E7BC /* read_handle_client.c */; };
+		EE032C65168FA0C400E5E7BC /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C52168FA0C400E5E7BC /* read_handle_shared.c */; };
+		EE032C66168FA0C400E5E7BC /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C53168FA0C400E5E7BC /* send_client_mosq.c */; };
+		EE032C67168FA0C400E5E7BC /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C54168FA0C400E5E7BC /* send_mosq.c */; };
+		EE032C68168FA0C400E5E7BC /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C56168FA0C400E5E7BC /* thread_mosq.c */; };
+		EE032C69168FA0C400E5E7BC /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C57168FA0C400E5E7BC /* util_mosq.c */; };
+		EE032C6A168FA0C400E5E7BC /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C59168FA0C400E5E7BC /* will_mosq.c */; };
+		EE032C6B168FA0C400E5E7BC /* Musquetteer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C5D168FA0C400E5E7BC /* Musquetteer.m */; };
 		EEFF31EE168F9D3A002253A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF31ED168F9D39002253A8 /* UIKit.framework */; };
 		EEFF31F0168F9D3A002253A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF31EF168F9D3A002253A8 /* Foundation.framework */; };
 		EEFF31F2168F9D3A002253A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF31F1168F9D3A002253A8 /* CoreGraphics.framework */; };
@@ -33,6 +47,34 @@
 		EE032C2F168F9E0C00E5E7BC /* MRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRViewController.m; sourceTree = "<group>"; };
 		EE032C30168F9E0C00E5E7BC /* Musquetteer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Musquetteer-Info.plist"; path = "Musquetteer/Classes/Musquetteer-Info.plist"; sourceTree = "<group>"; };
 		EE032C31168F9E0C00E5E7BC /* Musquetteer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Musquetteer-Prefix.pch"; path = "Musquetteer/Classes/Musquetteer-Prefix.pch"; sourceTree = "<group>"; };
+		EE032C41168FA0C400E5E7BC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		EE032C42168FA0C400E5E7BC /* dummypthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummypthread.h; sourceTree = "<group>"; };
+		EE032C43168FA0C400E5E7BC /* logging_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging_mosq.c; sourceTree = "<group>"; };
+		EE032C44168FA0C400E5E7BC /* logging_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging_mosq.h; sourceTree = "<group>"; };
+		EE032C45168FA0C400E5E7BC /* memory_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory_mosq.c; sourceTree = "<group>"; };
+		EE032C46168FA0C400E5E7BC /* memory_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_mosq.h; sourceTree = "<group>"; };
+		EE032C47168FA0C400E5E7BC /* messages_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = messages_mosq.c; sourceTree = "<group>"; };
+		EE032C48168FA0C400E5E7BC /* messages_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messages_mosq.h; sourceTree = "<group>"; };
+		EE032C49168FA0C400E5E7BC /* mosquitto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mosquitto.c; sourceTree = "<group>"; };
+		EE032C4A168FA0C400E5E7BC /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto.h; sourceTree = "<group>"; };
+		EE032C4B168FA0C400E5E7BC /* mosquitto_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto_internal.h; sourceTree = "<group>"; };
+		EE032C4C168FA0C400E5E7BC /* mqtt3_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqtt3_protocol.h; sourceTree = "<group>"; };
+		EE032C4D168FA0C400E5E7BC /* net_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net_mosq.c; sourceTree = "<group>"; };
+		EE032C4E168FA0C400E5E7BC /* net_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_mosq.h; sourceTree = "<group>"; };
+		EE032C4F168FA0C400E5E7BC /* read_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle.c; sourceTree = "<group>"; };
+		EE032C50168FA0C400E5E7BC /* read_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_handle.h; sourceTree = "<group>"; };
+		EE032C51168FA0C400E5E7BC /* read_handle_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_client.c; sourceTree = "<group>"; };
+		EE032C52168FA0C400E5E7BC /* read_handle_shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_shared.c; sourceTree = "<group>"; };
+		EE032C53168FA0C400E5E7BC /* send_client_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_client_mosq.c; sourceTree = "<group>"; };
+		EE032C54168FA0C400E5E7BC /* send_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_mosq.c; sourceTree = "<group>"; };
+		EE032C55168FA0C400E5E7BC /* send_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send_mosq.h; sourceTree = "<group>"; };
+		EE032C56168FA0C400E5E7BC /* thread_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread_mosq.c; sourceTree = "<group>"; };
+		EE032C57168FA0C400E5E7BC /* util_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util_mosq.c; sourceTree = "<group>"; };
+		EE032C58168FA0C400E5E7BC /* util_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_mosq.h; sourceTree = "<group>"; };
+		EE032C59168FA0C400E5E7BC /* will_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = will_mosq.c; sourceTree = "<group>"; };
+		EE032C5A168FA0C400E5E7BC /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = will_mosq.h; sourceTree = "<group>"; };
+		EE032C5C168FA0C400E5E7BC /* Musquetteer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musquetteer.h; sourceTree = "<group>"; };
+		EE032C5D168FA0C400E5E7BC /* Musquetteer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Musquetteer.m; sourceTree = "<group>"; };
 		EEFF31E9168F9D39002253A8 /* Musquetteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musquetteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFF31ED168F9D39002253A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EEFF31EF168F9D3A002253A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +98,7 @@
 		EE032C22168F9DFB00E5E7BC /* Musquetteer */ = {
 			isa = PBXGroup;
 			children = (
+				EE032C3F168FA0C400E5E7BC /* Lib */,
 				EE032C3B168F9E4600E5E7BC /* Resources */,
 				EE032C23168F9E0C00E5E7BC /* Classes */,
 			);
@@ -111,6 +154,58 @@
 				EE032C31168F9E0C00E5E7BC /* Musquetteer-Prefix.pch */,
 			);
 			name = Others;
+			sourceTree = "<group>";
+		};
+		EE032C3F168FA0C400E5E7BC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EE032C40168FA0C400E5E7BC /* libmosquitto */,
+				EE032C5B168FA0C400E5E7BC /* Musquetteer */,
+			);
+			name = Lib;
+			path = Musquetteer/Lib;
+			sourceTree = "<group>";
+		};
+		EE032C40168FA0C400E5E7BC /* libmosquitto */ = {
+			isa = PBXGroup;
+			children = (
+				EE032C41168FA0C400E5E7BC /* config.h */,
+				EE032C42168FA0C400E5E7BC /* dummypthread.h */,
+				EE032C43168FA0C400E5E7BC /* logging_mosq.c */,
+				EE032C44168FA0C400E5E7BC /* logging_mosq.h */,
+				EE032C45168FA0C400E5E7BC /* memory_mosq.c */,
+				EE032C46168FA0C400E5E7BC /* memory_mosq.h */,
+				EE032C47168FA0C400E5E7BC /* messages_mosq.c */,
+				EE032C48168FA0C400E5E7BC /* messages_mosq.h */,
+				EE032C49168FA0C400E5E7BC /* mosquitto.c */,
+				EE032C4A168FA0C400E5E7BC /* mosquitto.h */,
+				EE032C4B168FA0C400E5E7BC /* mosquitto_internal.h */,
+				EE032C4C168FA0C400E5E7BC /* mqtt3_protocol.h */,
+				EE032C4D168FA0C400E5E7BC /* net_mosq.c */,
+				EE032C4E168FA0C400E5E7BC /* net_mosq.h */,
+				EE032C4F168FA0C400E5E7BC /* read_handle.c */,
+				EE032C50168FA0C400E5E7BC /* read_handle.h */,
+				EE032C51168FA0C400E5E7BC /* read_handle_client.c */,
+				EE032C52168FA0C400E5E7BC /* read_handle_shared.c */,
+				EE032C53168FA0C400E5E7BC /* send_client_mosq.c */,
+				EE032C54168FA0C400E5E7BC /* send_mosq.c */,
+				EE032C55168FA0C400E5E7BC /* send_mosq.h */,
+				EE032C56168FA0C400E5E7BC /* thread_mosq.c */,
+				EE032C57168FA0C400E5E7BC /* util_mosq.c */,
+				EE032C58168FA0C400E5E7BC /* util_mosq.h */,
+				EE032C59168FA0C400E5E7BC /* will_mosq.c */,
+				EE032C5A168FA0C400E5E7BC /* will_mosq.h */,
+			);
+			path = libmosquitto;
+			sourceTree = "<group>";
+		};
+		EE032C5B168FA0C400E5E7BC /* Musquetteer */ = {
+			isa = PBXGroup;
+			children = (
+				EE032C5C168FA0C400E5E7BC /* Musquetteer.h */,
+				EE032C5D168FA0C400E5E7BC /* Musquetteer.m */,
+			);
+			path = Musquetteer;
 			sourceTree = "<group>";
 		};
 		EEFF31DE168F9D39002253A8 = {
@@ -210,6 +305,20 @@
 				EE032C37168F9E0C00E5E7BC /* main.m in Sources */,
 				EE032C38168F9E0C00E5E7BC /* MRAppDelegate.m in Sources */,
 				EE032C39168F9E0C00E5E7BC /* MRViewController.m in Sources */,
+				EE032C5E168FA0C400E5E7BC /* logging_mosq.c in Sources */,
+				EE032C5F168FA0C400E5E7BC /* memory_mosq.c in Sources */,
+				EE032C60168FA0C400E5E7BC /* messages_mosq.c in Sources */,
+				EE032C61168FA0C400E5E7BC /* mosquitto.c in Sources */,
+				EE032C62168FA0C400E5E7BC /* net_mosq.c in Sources */,
+				EE032C63168FA0C400E5E7BC /* read_handle.c in Sources */,
+				EE032C64168FA0C400E5E7BC /* read_handle_client.c in Sources */,
+				EE032C65168FA0C400E5E7BC /* read_handle_shared.c in Sources */,
+				EE032C66168FA0C400E5E7BC /* send_client_mosq.c in Sources */,
+				EE032C67168FA0C400E5E7BC /* send_mosq.c in Sources */,
+				EE032C68168FA0C400E5E7BC /* thread_mosq.c in Sources */,
+				EE032C69168FA0C400E5E7BC /* util_mosq.c in Sources */,
+				EE032C6A168FA0C400E5E7BC /* will_mosq.c in Sources */,
+				EE032C6B168FA0C400E5E7BC /* Musquetteer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +400,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Musquetteer/Classes/Musquetteer-Prefix.pch";
+				HEADER_SEARCH_PATHS = Musquetteer/Lib/libmosquitto;
 				INFOPLIST_FILE = "$(SRCROOT)/Musquetteer/Classes/Musquetteer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +413,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Musquetteer/Classes/Musquetteer-Prefix.pch";
+				HEADER_SEARCH_PATHS = Musquetteer/Lib/libmosquitto;
 				INFOPLIST_FILE = "$(SRCROOT)/Musquetteer/Classes/Musquetteer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
