@@ -1,5 +1,5 @@
 //
-//  MRViewController.h
+//  MRLedsViewController.h
 //  Musquetteer
 //
 //  Created by Giordano Scalzo on 12/29/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MRViewController : UIViewController
+@interface MRLedsViewController : UIViewController
 
 @end

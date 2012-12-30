@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Leds View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="MRViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="MRLedsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,31 +40,62 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9W-B0-qyB"/>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXs-II-1Mz"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="greenled.png" translatesAutoresizingMaskIntoConstraints="NO" id="cvO-Ve-CcO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="OTC-l2-BKq"/>
+                                    <constraint firstAttribute="height" constant="30" id="nfL-HH-mFA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="greenled.png" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-4p-LQU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xN3-kn-VRA"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L9W-B0-qyB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0je-4T-0Q7"/>
+                            <constraint firstItem="cvO-Ve-CcO" firstAttribute="centerX" secondItem="s9L-fc-FoM" secondAttribute="centerX" type="default" id="1mv-FS-aei"/>
+                            <constraint firstItem="cvO-Ve-CcO" firstAttribute="trailing" secondItem="dUK-4p-LQU" secondAttribute="trailing" type="default" id="2tx-Au-xtP"/>
                             <constraint firstAttribute="trailing" secondItem="ayK-Ea-hS0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7M1-na-MZw"/>
-                            <constraint firstItem="L9W-B0-qyB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="70" id="Doz-tY-ECW"/>
-                            <constraint firstItem="Jdl-M1-jvW" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="154" id="Hzb-p6-xlJ"/>
+                            <constraint firstItem="Jdl-M1-jvW" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Hz2-Rz-X1T"/>
+                            <constraint firstItem="dUK-4p-LQU" firstAttribute="bottom" secondItem="pXs-II-1Mz" secondAttribute="bottom" type="default" id="ICO-mr-P9I"/>
                             <constraint firstItem="ayK-Ea-hS0" firstAttribute="baseline" secondItem="yxM-04-Whd" secondAttribute="baseline" type="default" id="KXW-9l-xEZ"/>
+                            <constraint firstItem="pXs-II-1Mz" firstAttribute="leading" secondItem="L9W-B0-qyB" secondAttribute="leading" type="default" id="Lit-kl-fol"/>
+                            <constraint firstItem="dUK-4p-LQU" firstAttribute="leading" secondItem="cvO-Ve-CcO" secondAttribute="leading" type="default" id="Mj2-gN-cIQ"/>
                             <constraint firstItem="pXs-II-1Mz" firstAttribute="top" secondItem="L9W-B0-qyB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="PWd-CB-Tvz"/>
                             <constraint firstItem="s9L-fc-FoM" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VkP-Pz-v03"/>
                             <constraint firstItem="yxM-04-Whd" firstAttribute="baseline" secondItem="s9L-fc-FoM" secondAttribute="baseline" type="default" id="Xmg-Rw-FQt"/>
                             <constraint firstItem="Jdl-M1-jvW" firstAttribute="centerY" secondItem="ayK-Ea-hS0" secondAttribute="centerY" type="default" id="bLi-Qx-c3d"/>
-                            <constraint firstItem="pXs-II-1Mz" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="c1g-ke-ROf"/>
                             <constraint firstItem="yxM-04-Whd" firstAttribute="leading" secondItem="s9L-fc-FoM" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cEy-p3-07l"/>
                             <constraint firstItem="ayK-Ea-hS0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="19" id="kBh-ns-pDw"/>
+                            <constraint firstItem="L9W-B0-qyB" firstAttribute="leading" secondItem="ayK-Ea-hS0" secondAttribute="leading" type="default" id="oO5-7p-QkC"/>
+                            <constraint firstItem="L9W-B0-qyB" firstAttribute="top" secondItem="ayK-Ea-hS0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wa4-dg-fKs"/>
+                            <constraint firstItem="cvO-Ve-CcO" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="yVU-cg-eLe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstLed" destination="cvO-Ve-CcO" id="YTh-Ze-MzH"/>
+                        <outlet property="firstLedSwitch" destination="L9W-B0-qyB" id="Yyr-fw-vFh"/>
+                        <outlet property="secondLed" destination="dUK-4p-LQU" id="Pjb-A3-jGd"/>
+                        <outlet property="secondLedSwitch" destination="pXs-II-1Mz" id="syl-vU-AsJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="greenled.png" width="15" height="15"/>
+    </resources>
     <classes>
-        <class className="MRViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MRViewController.h"/>
+        <class className="MRLedsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MRLedsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="firstLed" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="firstLedSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="secondLed" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="secondLedSwitch" candidateClass="UISwitch"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
