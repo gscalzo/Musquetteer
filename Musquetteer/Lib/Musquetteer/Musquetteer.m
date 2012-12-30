@@ -8,6 +8,13 @@
 #import "Musquetteer.h"
 #import "mosquitto.h"
 
+@interface Musquetteer () {
+    struct mosquitto *mosq;
+    NSTimer *timer;
+}
+
+@end
+
 @implementation Musquetteer
 
 //@synthesize host;

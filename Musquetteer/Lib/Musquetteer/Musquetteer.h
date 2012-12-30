@@ -21,10 +21,7 @@
 @end
 
 
-@interface Musquetteer : NSObject {
-    struct mosquitto *mosq;
-    NSTimer *timer;
-}
+@interface Musquetteer : NSObject
 
 @property (readwrite,strong) NSString *host;
 @property (readwrite,assign) unsigned short port;

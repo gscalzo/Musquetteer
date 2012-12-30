@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE032C32168F9E0C00E5E7BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE032C24168F9E0C00E5E7BC /* Default-568h@2x.png */; };
-		EE032C33168F9E0C00E5E7BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EE032C25168F9E0C00E5E7BC /* Default.png */; };
-		EE032C34168F9E0C00E5E7BC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE032C26168F9E0C00E5E7BC /* Default@2x.png */; };
-		EE032C35168F9E0C00E5E7BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE032C27168F9E0C00E5E7BC /* InfoPlist.strings */; };
-		EE032C36168F9E0C00E5E7BC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE032C29168F9E0C00E5E7BC /* MainStoryboard.storyboard */; };
 		EE032C37168F9E0C00E5E7BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C2B168F9E0C00E5E7BC /* main.m */; };
 		EE032C38168F9E0C00E5E7BC /* MRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C2D168F9E0C00E5E7BC /* MRAppDelegate.m */; };
 		EE032C39168F9E0C00E5E7BC /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C2F168F9E0C00E5E7BC /* MRViewController.m */; };
@@ -29,24 +24,26 @@
 		EE032C69168FA0C400E5E7BC /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C57168FA0C400E5E7BC /* util_mosq.c */; };
 		EE032C6A168FA0C400E5E7BC /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = EE032C59168FA0C400E5E7BC /* will_mosq.c */; };
 		EE032C6B168FA0C400E5E7BC /* Musquetteer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE032C5D168FA0C400E5E7BC /* Musquetteer.m */; };
+		EE518CB1169079500015DF31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE518CA2169079500015DF31 /* InfoPlist.strings */; };
+		EE518CB2169079500015DF31 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE518CA4169079500015DF31 /* MainStoryboard.storyboard */; };
+		EE518CB5169079500015DF31 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE518CA9169079500015DF31 /* Default-568h@2x.png */; };
+		EE518CB6169079500015DF31 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EE518CAA169079500015DF31 /* Default.png */; };
+		EE518CB7169079500015DF31 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE518CAB169079500015DF31 /* Default@2x.png */; };
+		EE518CBF169079EB0015DF31 /* greenled.png in Resources */ = {isa = PBXBuildFile; fileRef = EE518CBB169079EB0015DF31 /* greenled.png */; };
+		EE518CC0169079EB0015DF31 /* greenled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE518CBC169079EB0015DF31 /* greenled@2x.png */; };
+		EE518CC1169079EB0015DF31 /* redled.png in Resources */ = {isa = PBXBuildFile; fileRef = EE518CBD169079EB0015DF31 /* redled.png */; };
+		EE518CC2169079EB0015DF31 /* redled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE518CBE169079EB0015DF31 /* redled@2x.png */; };
 		EEFF31EE168F9D3A002253A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF31ED168F9D39002253A8 /* UIKit.framework */; };
 		EEFF31F0168F9D3A002253A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF31EF168F9D3A002253A8 /* Foundation.framework */; };
 		EEFF31F2168F9D3A002253A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFF31F1168F9D3A002253A8 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EE032C24168F9E0C00E5E7BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Musquetteer/Classes/Default-568h@2x.png"; sourceTree = "<group>"; };
-		EE032C25168F9E0C00E5E7BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Musquetteer/Classes/Default.png; sourceTree = "<group>"; };
-		EE032C26168F9E0C00E5E7BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Musquetteer/Classes/Default@2x.png"; sourceTree = "<group>"; };
-		EE032C28168F9E0C00E5E7BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EE032C2A168F9E0C00E5E7BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EE032C2B168F9E0C00E5E7BC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE032C2C168F9E0C00E5E7BC /* MRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAppDelegate.h; sourceTree = "<group>"; };
 		EE032C2D168F9E0C00E5E7BC /* MRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAppDelegate.m; sourceTree = "<group>"; };
 		EE032C2E168F9E0C00E5E7BC /* MRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRViewController.h; sourceTree = "<group>"; };
 		EE032C2F168F9E0C00E5E7BC /* MRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRViewController.m; sourceTree = "<group>"; };
-		EE032C30168F9E0C00E5E7BC /* Musquetteer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Musquetteer-Info.plist"; path = "Musquetteer/Classes/Musquetteer-Info.plist"; sourceTree = "<group>"; };
-		EE032C31168F9E0C00E5E7BC /* Musquetteer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Musquetteer-Prefix.pch"; path = "Musquetteer/Classes/Musquetteer-Prefix.pch"; sourceTree = "<group>"; };
 		EE032C41168FA0C400E5E7BC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		EE032C42168FA0C400E5E7BC /* dummypthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummypthread.h; sourceTree = "<group>"; };
 		EE032C43168FA0C400E5E7BC /* logging_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging_mosq.c; sourceTree = "<group>"; };
@@ -75,6 +72,17 @@
 		EE032C5A168FA0C400E5E7BC /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = will_mosq.h; sourceTree = "<group>"; };
 		EE032C5C168FA0C400E5E7BC /* Musquetteer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Musquetteer.h; sourceTree = "<group>"; };
 		EE032C5D168FA0C400E5E7BC /* Musquetteer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Musquetteer.m; sourceTree = "<group>"; };
+		EE518CA3169079500015DF31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE518CA5169079500015DF31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EE518CA9169079500015DF31 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EE518CAA169079500015DF31 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EE518CAB169079500015DF31 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EE518CAF169079500015DF31 /* Musquetteer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Musquetteer-Info.plist"; sourceTree = "<group>"; };
+		EE518CB0169079500015DF31 /* Musquetteer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Musquetteer-Prefix.pch"; sourceTree = "<group>"; };
+		EE518CBB169079EB0015DF31 /* greenled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenled.png; sourceTree = "<group>"; };
+		EE518CBC169079EB0015DF31 /* greenled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenled@2x.png"; sourceTree = "<group>"; };
+		EE518CBD169079EB0015DF31 /* redled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redled.png; sourceTree = "<group>"; };
+		EE518CBE169079EB0015DF31 /* redled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redled@2x.png"; sourceTree = "<group>"; };
 		EEFF31E9168F9D39002253A8 /* Musquetteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musquetteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFF31ED168F9D39002253A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EEFF31EF168F9D3A002253A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,8 +106,8 @@
 		EE032C22168F9DFB00E5E7BC /* Musquetteer */ = {
 			isa = PBXGroup;
 			children = (
+				EE518CA1169079500015DF31 /* Resources */,
 				EE032C3F168FA0C400E5E7BC /* Lib */,
-				EE032C3B168F9E4600E5E7BC /* Resources */,
 				EE032C23168F9E0C00E5E7BC /* Classes */,
 			);
 			name = Musquetteer;
@@ -116,44 +124,6 @@
 			);
 			name = Classes;
 			path = Musquetteer/Classes;
-			sourceTree = "<group>";
-		};
-		EE032C3B168F9E4600E5E7BC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				EE032C3C168F9E6300E5E7BC /* Images */,
-				EE032C3E168F9E8800E5E7BC /* Others */,
-				EE032C3D168F9E7500E5E7BC /* Storyboard */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		EE032C3C168F9E6300E5E7BC /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				EE032C24168F9E0C00E5E7BC /* Default-568h@2x.png */,
-				EE032C25168F9E0C00E5E7BC /* Default.png */,
-				EE032C26168F9E0C00E5E7BC /* Default@2x.png */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
-		EE032C3D168F9E7500E5E7BC /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				EE032C29168F9E0C00E5E7BC /* MainStoryboard.storyboard */,
-			);
-			name = Storyboard;
-			sourceTree = "<group>";
-		};
-		EE032C3E168F9E8800E5E7BC /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				EE032C27168F9E0C00E5E7BC /* InfoPlist.strings */,
-				EE032C30168F9E0C00E5E7BC /* Musquetteer-Info.plist */,
-				EE032C31168F9E0C00E5E7BC /* Musquetteer-Prefix.pch */,
-			);
-			name = Others;
 			sourceTree = "<group>";
 		};
 		EE032C3F168FA0C400E5E7BC /* Lib */ = {
@@ -206,6 +176,41 @@
 				EE032C5D168FA0C400E5E7BC /* Musquetteer.m */,
 			);
 			path = Musquetteer;
+			sourceTree = "<group>";
+		};
+		EE518CA1169079500015DF31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE518CA2169079500015DF31 /* InfoPlist.strings */,
+				EE518CA4169079500015DF31 /* MainStoryboard.storyboard */,
+				EE518CA6169079500015DF31 /* Images */,
+				EE518CAE169079500015DF31 /* Others */,
+			);
+			name = Resources;
+			path = Musquetteer/Classes/Resources;
+			sourceTree = "<group>";
+		};
+		EE518CA6169079500015DF31 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE518CBB169079EB0015DF31 /* greenled.png */,
+				EE518CBC169079EB0015DF31 /* greenled@2x.png */,
+				EE518CBD169079EB0015DF31 /* redled.png */,
+				EE518CBE169079EB0015DF31 /* redled@2x.png */,
+				EE518CA9169079500015DF31 /* Default-568h@2x.png */,
+				EE518CAA169079500015DF31 /* Default.png */,
+				EE518CAB169079500015DF31 /* Default@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EE518CAE169079500015DF31 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				EE518CAF169079500015DF31 /* Musquetteer-Info.plist */,
+				EE518CB0169079500015DF31 /* Musquetteer-Prefix.pch */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		EEFF31DE168F9D39002253A8 = {
@@ -287,11 +292,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE032C32168F9E0C00E5E7BC /* Default-568h@2x.png in Resources */,
-				EE032C33168F9E0C00E5E7BC /* Default.png in Resources */,
-				EE032C34168F9E0C00E5E7BC /* Default@2x.png in Resources */,
-				EE032C35168F9E0C00E5E7BC /* InfoPlist.strings in Resources */,
-				EE032C36168F9E0C00E5E7BC /* MainStoryboard.storyboard in Resources */,
+				EE518CB1169079500015DF31 /* InfoPlist.strings in Resources */,
+				EE518CB2169079500015DF31 /* MainStoryboard.storyboard in Resources */,
+				EE518CB5169079500015DF31 /* Default-568h@2x.png in Resources */,
+				EE518CB6169079500015DF31 /* Default.png in Resources */,
+				EE518CB7169079500015DF31 /* Default@2x.png in Resources */,
+				EE518CBF169079EB0015DF31 /* greenled.png in Resources */,
+				EE518CC0169079EB0015DF31 /* greenled@2x.png in Resources */,
+				EE518CC1169079EB0015DF31 /* redled.png in Resources */,
+				EE518CC2169079EB0015DF31 /* redled@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,22 +334,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE032C27168F9E0C00E5E7BC /* InfoPlist.strings */ = {
+		EE518CA2169079500015DF31 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE032C28168F9E0C00E5E7BC /* en */,
+				EE518CA3169079500015DF31 /* en */,
 			);
 			name = InfoPlist.strings;
-			path = Musquetteer/Classes;
 			sourceTree = "<group>";
 		};
-		EE032C29168F9E0C00E5E7BC /* MainStoryboard.storyboard */ = {
+		EE518CA4169079500015DF31 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE032C2A168F9E0C00E5E7BC /* en */,
+				EE518CA5169079500015DF31 /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			path = Musquetteer/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,9 +406,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Musquetteer/Classes/Musquetteer-Prefix.pch";
+				GCC_PREFIX_HEADER = "Musquetteer/Classes/Resources/Others/Musquetteer-Prefix.pch";
 				HEADER_SEARCH_PATHS = Musquetteer/Lib/libmosquitto;
-				INFOPLIST_FILE = "$(SRCROOT)/Musquetteer/Classes/Musquetteer-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Musquetteer/Classes/Resources/Others/Musquetteer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -412,9 +419,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Musquetteer/Classes/Musquetteer-Prefix.pch";
+				GCC_PREFIX_HEADER = "Musquetteer/Classes/Resources/Others/Musquetteer-Prefix.pch";
 				HEADER_SEARCH_PATHS = Musquetteer/Lib/libmosquitto;
-				INFOPLIST_FILE = "$(SRCROOT)/Musquetteer/Classes/Musquetteer-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Musquetteer/Classes/Resources/Others/Musquetteer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
