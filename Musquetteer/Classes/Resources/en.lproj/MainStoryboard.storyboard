@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
@@ -12,18 +12,18 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test.mosquitto.org" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9L-fc-FoM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test.mosquitto.org" borderStyle="roundedRect" minimumFontSize="17" id="s9L-fc-FoM">
+                                <rect key="frame" x="44" y="12" width="133" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1883" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxM-04-Whd">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="47" id="nCV-vk-eed"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1883" borderStyle="roundedRect" minimumFontSize="17" id="yxM-04-Whd">
+                                <rect key="frame" x="195" y="12" width="47" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayK-Ea-hS0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ayK-Ea-hS0">
+                                <rect key="frame" x="98" y="50" width="128" height="53"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Connect">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,50 +32,43 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onConnectPressed:" destination="2" eventType="touchUpInside" id="pMq-Bb-l7S"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=":" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdl-M1-jvW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=":" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jdl-M1-jvW">
+                                <rect key="frame" x="182" y="16" width="5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9W-B0-qyB"/>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXs-II-1Mz"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="greenled.png" translatesAutoresizingMaskIntoConstraints="NO" id="cvO-Ve-CcO">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="OTC-l2-BKq"/>
-                                    <constraint firstAttribute="height" constant="30" id="nfL-HH-mFA"/>
-                                </constraints>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="L9W-B0-qyB">
+                                <rect key="frame" x="216" y="120" width="79" height="27"/>
+                                <connections>
+                                    <action selector="onFirstSwitchChanged:" destination="2" eventType="valueChanged" id="KbG-aW-6le"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="pXs-II-1Mz">
+                                <rect key="frame" x="216" y="155" width="79" height="27"/>
+                                <connections>
+                                    <action selector="onSecondSwitchChanged:" destination="2" eventType="valueChanged" id="ScM-Dy-243"/>
+                                </connections>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="greenled.png" id="cvO-Ve-CcO">
+                                <rect key="frame" x="72" y="119" width="30" height="30"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="greenled.png" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-4p-LQU">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="xN3-kn-VRA"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="greenled.png" id="dUK-4p-LQU">
+                                <rect key="frame" x="72" y="152" width="30" height="30"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cvO-Ve-CcO" firstAttribute="centerX" secondItem="s9L-fc-FoM" secondAttribute="centerX" type="default" id="1mv-FS-aei"/>
-                            <constraint firstItem="cvO-Ve-CcO" firstAttribute="trailing" secondItem="dUK-4p-LQU" secondAttribute="trailing" type="default" id="2tx-Au-xtP"/>
-                            <constraint firstAttribute="trailing" secondItem="ayK-Ea-hS0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7M1-na-MZw"/>
-                            <constraint firstItem="Jdl-M1-jvW" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Hz2-Rz-X1T"/>
-                            <constraint firstItem="dUK-4p-LQU" firstAttribute="bottom" secondItem="pXs-II-1Mz" secondAttribute="bottom" type="default" id="ICO-mr-P9I"/>
-                            <constraint firstItem="ayK-Ea-hS0" firstAttribute="baseline" secondItem="yxM-04-Whd" secondAttribute="baseline" type="default" id="KXW-9l-xEZ"/>
-                            <constraint firstItem="pXs-II-1Mz" firstAttribute="leading" secondItem="L9W-B0-qyB" secondAttribute="leading" type="default" id="Lit-kl-fol"/>
-                            <constraint firstItem="dUK-4p-LQU" firstAttribute="leading" secondItem="cvO-Ve-CcO" secondAttribute="leading" type="default" id="Mj2-gN-cIQ"/>
-                            <constraint firstItem="pXs-II-1Mz" firstAttribute="top" secondItem="L9W-B0-qyB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="PWd-CB-Tvz"/>
-                            <constraint firstItem="s9L-fc-FoM" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VkP-Pz-v03"/>
-                            <constraint firstItem="yxM-04-Whd" firstAttribute="baseline" secondItem="s9L-fc-FoM" secondAttribute="baseline" type="default" id="Xmg-Rw-FQt"/>
-                            <constraint firstItem="Jdl-M1-jvW" firstAttribute="centerY" secondItem="ayK-Ea-hS0" secondAttribute="centerY" type="default" id="bLi-Qx-c3d"/>
-                            <constraint firstItem="yxM-04-Whd" firstAttribute="leading" secondItem="s9L-fc-FoM" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cEy-p3-07l"/>
-                            <constraint firstItem="ayK-Ea-hS0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="19" id="kBh-ns-pDw"/>
-                            <constraint firstItem="L9W-B0-qyB" firstAttribute="leading" secondItem="ayK-Ea-hS0" secondAttribute="leading" type="default" id="oO5-7p-QkC"/>
-                            <constraint firstItem="L9W-B0-qyB" firstAttribute="top" secondItem="ayK-Ea-hS0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wa4-dg-fKs"/>
-                            <constraint firstItem="cvO-Ve-CcO" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="yVU-cg-eLe"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="connectBtn" destination="ayK-Ea-hS0" id="EiQ-Fo-Wd8"/>
                         <outlet property="firstLed" destination="cvO-Ve-CcO" id="YTh-Ze-MzH"/>
                         <outlet property="firstLedSwitch" destination="L9W-B0-qyB" id="Yyr-fw-vFh"/>
+                        <outlet property="hostTxt" destination="s9L-fc-FoM" id="Okm-KI-xgD"/>
+                        <outlet property="portTxt" destination="yxM-04-Whd" id="Noo-7L-DHb"/>
                         <outlet property="secondLed" destination="dUK-4p-LQU" id="Pjb-A3-jGd"/>
                         <outlet property="secondLedSwitch" destination="pXs-II-1Mz" id="syl-vU-AsJ"/>
                     </connections>
@@ -91,14 +84,17 @@
         <class className="MRLedsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MRLedsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onConnectPressed:"/>
+                <relationship kind="action" name="onFirstSwitchChanged:" candidateClass="UISwitch"/>
+                <relationship kind="action" name="onSecondSwitchChanged:" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="connectBtn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="firstLed" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="firstLedSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="hostTxt" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="portTxt" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="secondLed" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="secondLedSwitch" candidateClass="UISwitch"/>
             </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

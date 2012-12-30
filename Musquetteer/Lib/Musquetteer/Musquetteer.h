@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MosquittoClientDeligate
+@protocol MusquetteerDelegate
 
 - (void) didConnect: (NSUInteger)code;
 - (void) didDisconnect;
@@ -17,7 +17,7 @@
 - (void) didReceiveMessage: (NSString*)message topic:(NSString*)topic;
 - (void) didSubscribe: (NSUInteger)messageId grantedQos:(NSArray*)qos;
 - (void) didUnsubscribe: (NSUInteger)messageId;
-
+- (void) onError:(NSError *)error;
 @end
 
 
@@ -29,7 +29,7 @@
 @property (readwrite,strong) NSString *password;
 @property (readwrite,assign) unsigned short keepAlive;
 @property (readwrite,assign) BOOL cleanSession;
-@property (readwrite,strong) id<MosquittoClientDeligate> delegate;
+@property (readwrite,strong) id<MusquetteerDelegate> delegate;
 
 + (void) initialize;
 + (NSString*) version;

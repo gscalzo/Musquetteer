@@ -17,15 +17,6 @@
 
 @implementation Musquetteer
 
-//@synthesize host;
-//@synthesize port;
-//@synthesize username;
-//@synthesize password;
-//@synthesize keepAlive;
-//@synthesize cleanSession;
-//@synthesize delegate;
-
-
 static void on_connect(struct mosquitto *mosq, void *obj, int rc)
 {
     Musquetteer* client = (__bridge Musquetteer*)obj;
