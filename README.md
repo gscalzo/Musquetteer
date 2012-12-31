@@ -6,6 +6,6 @@ It contains an usage example, that drives leds status using two channels on a MQ
 
 *TODO*
 - add blocks instead of delegate (so pre-arc :-))
-- publisch to CocoaPod specs
+- publish to CocoaPod specs
 - add error check
 - add docs ;-)
