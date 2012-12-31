@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/gscalzo/Musquetteer'
   s.author   = { 'Giordano Scalzo' => 'giordano.scalzo@gmail.com' }
   s.source   = { :git => 'https://github.com/gscalzo/Musquetteer.git', :tag => '0.0.1'  }
-  s.source_files = 'Musquetteer/Lib/**/*.{h,m}'
+  s.source_files = 'Musquetteer/Lib/**/*.{h,m,c}'
   s.platform = :ios
   s.requires_arc = true
 end
